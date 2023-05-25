@@ -1,5 +1,3 @@
-# не работает для перевода с Русского из за оссобенностей googletrans + переводит не на все языки в том числе и на русский
-
 import telebot
 from googletrans import Translator, LANGUAGES
 
