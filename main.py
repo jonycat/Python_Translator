@@ -53,8 +53,4 @@ def handle_error(message, error):
     error_message = f'Произошла ошибка: {str(error)}'
     bot.send_message(message.chat.id, error_message)
 
-@bot.message_handler(content_types=['text'])
-def handle_unknown(message):
-    bot.send_message(message.chat.id, 'Извините, я не распознал вашу команду. Пожалуйста, воспользуйтесь командой /start для начала перевода.')
-
 bot.polling()
